@@ -566,7 +566,7 @@ bool OneWire::check_crc16(const uint8_t* input, uint16_t len, const uint8_t* inv
 
 uint16_t OneWire::crc16(const uint8_t* input, uint16_t len, uint16_t crc)
 {
-#if defined(__AVR__)
+#if 0
     for (uint16_t i = 0 ; i < len ; i++) {
         crc = _crc16_update(crc, input[i]);
     }
