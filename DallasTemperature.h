@@ -19,7 +19,13 @@
 #endif
 
 #include <inttypes.h>
+
+#ifndef USE_1W_PIN
 #include <DS2482_OneWire.h>
+#else
+#include <OneWire.h>
+#endif
+
 
 // Model IDs
 #define DS18S20MODEL 0x10  // also DS1820
